@@ -4,7 +4,7 @@
 
 ## 1. Features
 
-- Flutter optimized for Embedded Systems
+- Optimized for Embedded Systems
   - Lightweight
   - Minimal dependent libraries
   - arm64/x64 devices support
