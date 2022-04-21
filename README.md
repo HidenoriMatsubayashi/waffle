@@ -24,7 +24,7 @@ You need to install the following dependent libraries to build this software. He
 
 ### Dependent libraries
 
-### Development environment
+#### Development environment
 - clang
 - cmake
 - build-essential
@@ -34,7 +34,7 @@ You need to install the following dependent libraries to build this software. He
 $ sudo apt install clang cmake build-essential pkg-config
 ```
 
-### Common system level libraries
+#### Common system level libraries
 - EGL
 - xkbcommon
 - OpenGL ES (>=3.0)
@@ -43,17 +43,18 @@ $ sudo apt install clang cmake build-essential pkg-config
 - wayland-protocols (to generate the source files of Wayland protocols)
 
 ```Shell
-$ sudo apt install libegl1-mesa-dev libxkbcommon-dev libgles2-mesa-dev libsoil-dev libwayland-dev wayland-protocols
+$ sudo apt install libegl1-mesa-dev libxkbcommon-dev libgles2-mesa-dev \ 
+                   libsoil-dev libwayland-dev wayland-protocols
 ```
 
-### System level libraries for X11 backends
+#### System level libraries for X11 backends
 - x11
 
 ```Shell
 $ sudo apt install libx11-dev
 ```
 
-### System level libraries for DRM backends
+#### System level libraries for DRM backends
 - libdrm
 - libgbm
 - libinput
@@ -61,10 +62,11 @@ $ sudo apt install libx11-dev
 - libsystemd
 
 ```Shell
-$ sudo apt install libdrm-dev libgbm-dev libinput-dev libudev-dev libsystemd-dev
+$ sudo apt install libdrm-dev libgbm-dev libinput-dev libudev-dev \ 
+                   libsystemd-dev
 ```
 
-## 3. How to build
+## 3. Building waffle
 
 ### X11 backend
 
@@ -82,7 +84,7 @@ cmake -DBACKEND_TYPE=DRM-GBM -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
 ```
 
-## 4. How to run
+## 4. Running waffle
 
 ### X11 backend
 
@@ -105,7 +107,7 @@ If you want to switch back from CUI to GUI, run Ctrl + Alt + F2 keys in a termin
 
 You need to run this program by a user who has the permission to access the input devices(/dev/input/xxx), if you use the DRM backend. Generally, it is a root user or a user who belongs to an input group.
 
-## 5. Debug waffle
+## 5. Debugging waffle
 
 ### Logging levels
 
