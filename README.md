@@ -1,6 +1,6 @@
 # waffle
 
-`waffle` is a Wayland compositor Especially, it is developed assuming that it will be used in embedded devices.
+`waffle` is a Wayland compositor. Especially, it is developed assuming that it will be used in embedded devices.
 
 ## 1. Features
 
