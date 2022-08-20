@@ -71,17 +71,17 @@ $ sudo apt install libdrm-dev libgbm-dev libinput-dev libudev-dev \
 ### X11 backend
 
 ```Shell
-mkdir build && cd build
-cmake -DBACKEND_TYPE=X11 -DCMAKE_BUILD_TYPE=Release ..
-cmake --build .
+$ mkdir build && cd build
+$ cmake -DBACKEND_TYPE=X11 -DCMAKE_BUILD_TYPE=Release ..
+$ cmake --build .
 ```
 
 ### DRM-GBM backend (Still developing)
 
 ```Shell
-mkdir build && cd build
-cmake -DBACKEND_TYPE=DRM-GBM -DCMAKE_BUILD_TYPE=Release ..
-cmake --build .
+$ mkdir build && cd build
+$ cmake -DBACKEND_TYPE=DRM-GBM -DCMAKE_BUILD_TYPE=Release ..
+$ cmake --build .
 ```
 
 ## 4. Running waffle
