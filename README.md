@@ -1,6 +1,6 @@
 # waffle
 
-`waffle` is a Wayland compositor. Especially, it is developed assuming that it will be used in embedded devices.
+`waffle` is a lightweight Wayland compositor for embedded devices.
 
 ## 1. Features
 
@@ -17,14 +17,17 @@
 - Keyboard, mouse and touch inputs support
 
 ## 2. System requirements
-You need to install the following dependent libraries to build this software. Here introduce how to install the libraries on Debian-based systems like Ubuntu.
+
+Install the following dependent libraries to build this software. Here introduce how to install the libraries on Debian-based systems like Ubuntu.
 
 ### Operating Systems
-**Ubuntu 20.04** is recommended to develop and build this software.
+
+Ubuntu 20.04 or above is recommended to develop and build this software.
 
 ### Dependent libraries
 
 #### Development environment
+
 - clang
 - cmake
 - build-essential
@@ -35,6 +38,7 @@ $ sudo apt install clang cmake build-essential pkg-config
 ```
 
 #### Common system level libraries
+
 - EGL
 - xkbcommon
 - OpenGL ES (>=3.0)
@@ -48,6 +52,7 @@ $ sudo apt install libegl1-mesa-dev libxkbcommon-dev libgles2-mesa-dev \
 ```
 
 #### System level libraries for X11 backends
+
 - x11
 
 ```Shell
@@ -55,6 +60,7 @@ $ sudo apt install libx11-dev
 ```
 
 #### System level libraries for DRM backends
+
 - libdrm
 - libgbm
 - libinput
